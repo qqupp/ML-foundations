@@ -3,12 +3,12 @@
 
 FROM jupyter/scipy-notebook:29f53f8b9927
 
-MAINTAINER Jon Krohn <jon@jonkrohn.com>
+LABEL MAINTAINER="Jon Krohn <jon@jonkrohn.com>"
 
 USER $NB_USER
 
 # Install TensorFlow: 
-RUN pip install tensorflow==2.2.0rc3
+RUN pip install tensorflow==2.2.0
 
 # Install PyTorch:
 RUN pip install torch==1.4.0
